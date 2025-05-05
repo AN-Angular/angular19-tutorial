@@ -1,0 +1,11 @@
+.product-container {
+    height: 300px;
+    overflow: auto;
+}
+.item {
+    display: flex;
+    img {
+        height: 120px;
+        margin-right: 10px;
+    }
+}

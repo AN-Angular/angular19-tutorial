@@ -1,0 +1,32 @@
+<h2>Service Demo</h2>
+
+<!-- <div>
+    @for(product of productList; track product.id) {
+
+        <div class="card">
+            <img src="{{product.thumbail}}" alt="">
+            <h3>Name: {{ product.title }}</h3>
+            <p>Price: {{ product.price }}</p>
+            <p>Rating: {{ product.rating }}</p>
+        </div>
+    }
+</div> -->
+<div class="product-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6 bg-gray-100 min-h-screen">
+    @for (product of productList; track product.id) {
+      <div class="item bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+        <img 
+          [src]="product.thumbnail" 
+          [alt]="product.title"
+          class="w-full h-48 object-cover"
+        />
+        <div class="p-4">
+          <h3 class="text-lg font-semibold text-gray-800">{{ product.title }}</h3>
+          <p class="text-green-600 font-bold mt-1">₹{{ product.price }}</p>
+          <div class="flex items-center mt-2">
+            <span class="text-yellow-500 text-sm mr-1">⭐</span>
+            <span class="text-sm text-gray-600">{{ product.rating }} / 5</span>
+          </div>
+        </div>
+      </div>
+    }
+  </div>

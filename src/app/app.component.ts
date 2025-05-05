@@ -24,6 +24,7 @@ import { PdChildToParentComponent } from './pd-child-to-parent/pd-child-to-paren
 import { PipesDemoComponent } from './pipes-demo/pipes-demo.component';
 import { CustomPipesComponent } from './custom-pipes/custom-pipes.component';
 import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.component';
+import { ServiceDemoComponent } from './service-demo/service-demo.component';
 
 @Component({
   selector: 'app-root',
@@ -52,7 +53,8 @@ import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.compo
     PdChildToParentComponent,
     PipesDemoComponent,
     CustomPipesComponent,
-    LifecycleHooksComponent
+    LifecycleHooksComponent,
+    ServiceDemoComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
