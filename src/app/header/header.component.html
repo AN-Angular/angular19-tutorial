@@ -1,0 +1,12 @@
+<nav>
+    <h2>Logo</h2>
+    <ul>
+        <li><a routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true}" routerLink="/">Home</a></li>
+        <li><a routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true}" routerLink="about">About</a></li>
+        <li><a routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true}" routerLink="contact">Contact</a></li>
+    </ul>
+    <!-- <div class="user-info">
+        <span *ngIf="isLoggedIn">Welcome, {{ userName }}</span>
+        <button (click)="isLoggedIn = !isLoggedIn">{{ isLoggedIn ? 'Logout' : 'Login' }}</button>
+    </div> -->
+</nav>

@@ -1,0 +1,10 @@
+<h4>effects works!</h4>
+<h5>Hello, {{ username() }} </h5>
+<button (click)="username.set('Ganpati')">Update Name</button>
+<button (click)="toggleHeader()">Toggle header </button>
+@if (isHeaderVisible) {
+  <h2>Main Heading</h2>
+}
+
+<h4>Count : {{ count() }} </h4>
+<button (click)="increment()">increment counter</button>

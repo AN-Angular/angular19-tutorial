@@ -1,0 +1,13 @@
+<h2>Pipes in Angular</h2>
+
+<h4>{{ title | uppercase }}</h4>
+<h4>{{ title | titlecase }}</h4>
+<h4>{{ title | lowercase }}</h4>
+<h4>{{ todaysDate | date }}</h4>
+<h4>{{ todaysDate | date: 'fullDate' }}</h4>
+<h4>{{ todaysDate | date: 'hh:mm:ss' }}</h4>
+<h4>{{ priceAmount }}</h4> <!-- default is Dollar -->
+<h4>{{ priceAmount | currency: 'INR' }}</h4>
+<h4>{{ priceAmount | currency: 'EUR' }}</h4>
+
+<h4>{{ todaysDate | date: 'fullDate' | uppercase }}</h4> <!-- use two pipes together -->

@@ -1,0 +1,30 @@
+<h2>Directives in Angular</h2>
+
+<h2>NgIf Directive</h2>
+<h3 *ngIf="showHeader">sub heading</h3>
+<button (click)="showHeader=!showHeader">toggle header</button>
+
+<ul>
+    <li *ngFor="let student of students">
+        <span>{{ student }}</span>
+    </li>
+</ul>
+
+<ul>
+    <li *ngFor="let student of studentData">
+        <span *ngIf="student.age > 18">{{ student.name }}</span>
+        <span *ngIf="student.age <= 18">{{ student.name }} (Minor)</span>  
+    </li>
+</ul>
+
+<button (click)="isLoggedIn = !isLoggedIn" *ngIf="isLoggedIn;else elseBlock">Logout</button>
+<ng-template #elseBlock>
+    <button (click)="isLoggedIn = !isLoggedIn">Login</button>
+</ng-template>
+
+<div [ngSwitch]="color">
+    <div *ngSwitchCase="'red'" style="background-color: red;">Red</div>
+    <div *ngSwitchCase="'green'" style="background-color: green;">Green</div>
+    <div *ngSwitchCase="'blue'" style="background-color: blue;">Blue</div>
+    <div *ngSwitchDefault >Unknown Color</div>
+</div>

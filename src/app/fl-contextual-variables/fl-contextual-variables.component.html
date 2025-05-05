@@ -1,0 +1,39 @@
+<h2>For Loop Contextual-variables</h2>
+
+<h3>First Last display</h3>
+@for(user of users; track user) {
+    @if($first || $last) {
+        <h5 style="background-color: rgb(62, 57, 147);">Sr. no. {{ $index+1}} and name: {{ user }}</h5>
+    } @else {
+        <h5 style="background-color: rgb(242, 166, 13);">Sr. no. {{ $index+1}} and name: {{ user }}</h5>
+    }
+}
+<h3>Odd Even display ({{users.length}})</h3>
+@for(user of users; track user) {
+    @if($odd) {
+        <h5 style="background-color: rgb(152, 199, 199);">Sr. no. {{ $index+1}} and name: {{ user }}</h5>
+    } @else {
+        <h5 style="background-color: rgb(227, 227, 175);">Sr. no. {{ $index+1}} and name: {{ user }}</h5>
+    }
+
+    @if($last) {
+        <h4>total count is {{ $count }}</h4>
+    }
+}
+
+<h3>Demonstrating Empty loop</h3>
+@for (student of studentList; track student) {
+    <h5>{{ student }}</h5>
+} @empty() {
+    <h5>No student data present</h5>
+}
+
+<!-- you can also define variables and use it -->
+<!-- 
+    @for(user of users; track user; let id = $index; let odd = $odd; let even = $even) {
+        <h5>
+            <span>{{ id + 1 }}</span>
+            <span>{{ user }}</span>
+        </h5>
+    }
+-->

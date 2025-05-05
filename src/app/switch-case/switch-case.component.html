@@ -1,0 +1,16 @@
+<p>switch-case works!</p>
+
+<button (click)="handleColorChange('red')">Red</button>
+<button (click)="handleColorChange('yellow')">Yellow</button>
+<button (click)="handleColorChange('green')">Green</button>
+<button (click)="handleColorChange('blue')">Reset</button>
+
+@switch(color) { @case('red') {
+<p class="red">Red</p>
+} @case('yellow') {
+<p class="yellow">Yellow</p>
+} @case('green') {
+<p class="green">Green</p>
+} @default {
+<p class="orange">Default orange</p>
+} }

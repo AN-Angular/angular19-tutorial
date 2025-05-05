@@ -1,0 +1,16 @@
+<h2>if-else | Control Flow </h2>
+
+<button (click)="toggleLogin()">{{ isLoggedIn ? 'SignOut' : 'SignIn' }}</button>
+
+<!-- @if(isLoggedIn) {
+    <h3>Welcome back, user!</h3>
+} -->
+
+<!-- if else  -->
+
+@if(isLoggedIn) {
+    <h3>Welcome back, user!</h3>
+}
+@else {
+    <h3>Please Sign in</h3>
+}

@@ -1,0 +1,15 @@
+<h2>For-loop Examples</h2>
+
+@for(user of users; track user) {
+    <h5>{{ user }}</h5>
+}
+
+<!-- track with unique identifier is required, also we can add id as index -->
+@for(student of students; track student.name;let id = $index) {
+    <h5>
+        <span>{{ id + 1 }}</span>
+        <span>{{ student.name }}</span>
+        <span>{{ student.age }}</span>
+    </h5>
+    
+}
