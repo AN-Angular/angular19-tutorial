@@ -1,0 +1,13 @@
+<h2>Signal Based Forms</h2>
+<form [formGroup]="form">
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" [formControlName]="form.model.name"/>
+  </div>
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" [formControlName]="form.model.email"/>
+  </div>
+  <p>Name: {{ form.model.name() }}</p>
+  <p>Email: {{ form.model.email() }}</p>
+  
