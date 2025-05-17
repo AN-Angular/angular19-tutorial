@@ -1,0 +1,16 @@
+<div class="main-container" [class.dark-theme]="theme() === 'dark'">
+    <h2>Signals-demo with Encapsulation</h2>
+    <div [class.dark-theme]="theme() === 'dark'">
+    <h1>Welcome {{ user()?.name || 'Guest' }}</h1>
+
+    <button *ngIf="!isLoggedIn()" (click)="login()">Login</button>
+    <button *ngIf="isLoggedIn()" (click)="logout()">Logout</button>
+
+    <button (click)="toggleTheme()">Toggle Theme</button>
+    <p>Current Theme: {{ theme() }}</p>
+
+    <h3>Settings</h3>
+    <p>Notifications: {{ settings().notificationsEnabled ? 'On' : 'Off' }}</p>
+    <p>Language: {{ settings().language }}</p>
+</div>
+</div>

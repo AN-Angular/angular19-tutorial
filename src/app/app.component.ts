@@ -25,6 +25,7 @@ import { PipesDemoComponent } from './pipes-demo/pipes-demo.component';
 import { CustomPipesComponent } from './custom-pipes/custom-pipes.component';
 import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.component';
 import { ServiceDemoComponent } from './service-demo/service-demo.component';
+import { SignalsDemoComponent } from './signals/signals-demo/signals-demo.component';
 
 @Component({
   selector: 'app-root',
@@ -54,7 +55,8 @@ import { ServiceDemoComponent } from './service-demo/service-demo.component';
     PipesDemoComponent,
     CustomPipesComponent,
     LifecycleHooksComponent,
-    ServiceDemoComponent
+    ServiceDemoComponent,
+    SignalsDemoComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
