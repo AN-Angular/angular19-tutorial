@@ -3,10 +3,11 @@ import { AuthService } from './services/auth.service';
 import { ThemeService } from './services/theme.service';
 import { SettingsService } from './services/settings.service';
 import { User } from './types/types';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-signals-demo',
-  imports: [],
+  imports: [NgIf],
   templateUrl: './signals-demo.component.html',
   styleUrl: './signals-demo.component.css'
 })
