@@ -1,0 +1,16 @@
+<h2>signals-and-observables works!</h2>
+<input type="text" [(ngModel)]="searchText" placeholder="Search..." class="border p-1" />
+
+<select [(ngModel)]="category" class="border p-1 ml-2">
+    <option value="">All Categories</option>
+    <option value="electronics">Electronics</option>
+    <option value="books">Books</option>
+</select>
+
+<p *ngIf="isLoading()">Loading...</p>
+
+<ul>
+    <li *ngFor="let product of products()">
+    {{ product.name }} - {{ product.category }}
+    </li>
+</ul>

@@ -26,6 +26,8 @@ import { CustomPipesComponent } from './custom-pipes/custom-pipes.component';
 import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.component';
 import { ServiceDemoComponent } from './service-demo/service-demo.component';
 import { SignalsDemoComponent } from './signals/signals-demo/signals-demo.component';
+import { SignalsDifferenceComponent } from './signals/signals-difference/signals-difference.component';
+import { SignalsAndObservablesComponent } from './signals/signals-and-observables/signals-and-observables.component';
 
 @Component({
   selector: 'app-root',
@@ -56,7 +58,9 @@ import { SignalsDemoComponent } from './signals/signals-demo/signals-demo.compon
     CustomPipesComponent,
     LifecycleHooksComponent,
     ServiceDemoComponent,
-    SignalsDemoComponent
+    SignalsDemoComponent,
+    SignalsDifferenceComponent,
+    SignalsAndObservablesComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
