@@ -8,6 +8,8 @@
 })
 export class SignalsDifferenceComponent {
 
+  // understanding signal method and interface for encapsulation
+  
   count: WritableSignal<number> = signal(0); // writable
 
   double: Signal<number> = computed(() => this.count() * 2); // readonly
