@@ -2,6 +2,13 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
+interface ProductResponse {
+  limit: number;
+  products: any;
+  skip: number;
+  total: number;
+}
+
 @Injectable({
   providedIn: 'root'
 })
@@ -14,7 +21,7 @@ export class ProductService {
   }
 
   getProductList() {
-    return this.http.get(this.url);
+    return this.http.get<ProductResponse>(this.url);
   }
 
   // for using datatype with interface

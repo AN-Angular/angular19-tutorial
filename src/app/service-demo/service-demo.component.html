@@ -12,7 +12,7 @@
     }
 </div> -->
 <div class="product-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6 bg-gray-100 min-h-screen">
-    @for (product of productList; track product.id) {
+    @for (product of productList(); track product.id) {
       <div class="item bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
         <img 
           [src]="product.thumbnail" 
